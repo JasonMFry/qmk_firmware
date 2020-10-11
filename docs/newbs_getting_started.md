@@ -111,6 +111,12 @@ Now that your QMK build environment is set up, you can build a firmware for your
 For example, to build a firmware for a Clueboard 66% you would use:
 
     qmk compile -kb clueboard/66/rev3 -km default
+    
+To find your keyboard's name look in the `keyboards` folder. There you will find a folder called `qmk_firmare/keyboards/clueboard/66/rev3`, or for those with a non-clueboard keyboard, `qmk_firmare/keyboards/board/name/rev`. You would then do
+
+    qmk compile -kb board/name/rev -km default
+    
+Note that your keyboard may not have a `rev`, this is just an example.
 
 When it is done you should have a lot of output that ends similar to this:
 
